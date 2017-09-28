@@ -1,4 +1,21 @@
 
+body {
+	background-color: black;
+	text-align: center;
+	color: red;
+}
+
+.header {
+	font-family: 'Creepster', cursive;
+	color: red;
+}
+.container {
+	padding: 70px 0px;
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	background-image: url(../images/creep.jpg);
+}
  
 .show {
 	color: red;
