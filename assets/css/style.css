@@ -8,15 +8,26 @@ body {
 .header {
 	font-family: 'Creepster', cursive;
 	color: red;
+	font-size: 70px;
 }
 .container {
 	padding: 70px 0px;
 	width: 960px;
-	height: auto;
+	height: 800px;
 	margin: 0 auto;
 	background-image: url(../images/creep.jpg);
 }
  
 .show {
 	color: red;
+ }
+
+ #startGame {
+ 	font-family: 'Creepster', cursive;
+ 	width: 200px;
+ 	height: auto;
+ 	background-color: red;
+ 	font-size: 30px;
+ 	border: 2px solid black;
+
  }

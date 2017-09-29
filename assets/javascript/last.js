@@ -31,16 +31,6 @@ function refreshPage(){
     window.location.reload();
 }
 
-// var reset = function() {
-	
-// 	console.log("it worked");
-// 	var newSecret = computerChoices[Math.floor(Math.random() * computerChoices.length)]
-// 	computerGuess = newSecret
-// 	var letters2 = newSecret.split("");
-// 	console.log(letters2);
-// }
-
-
 window.onload = function(){
 		setup()
 	}
@@ -54,7 +44,7 @@ var setup = function() {
 	}
 
 	document.getElementById("hidden").innerHTML = answerArray.join("");
-
+	document.getElementById("numbLeft").textContent = " Number of guesses left: " + numbLeft;
 	for (i = 0; i < letters.length; i++) {
 		display[i] = "_ ";
 		output = output + display[i];
@@ -80,9 +70,6 @@ document.onkeyup = function(event) {
 			answerArray[i] = letters[i];
 			document.getElementById("hidden").innerHTML = answerArray.join("");
 			numbLeft++
-			// if (userG[i] >= 2) {
-			// 	document.getElementById("game2").textContent = "already guessed that"
-			// }
 			
 			if (computerGuess == answerArray.join('')) {
 				document.getElementById("game2").textContent = "You win!"
@@ -95,29 +82,11 @@ document.onkeyup = function(event) {
 			} 
 			playAudio();
 			}
+
+
 		}
 
 	}
-	
-	// for (i = 0; i < letters.length; i++){
-
-	// 	if (userG == letters[i]){
-	// 		answerArray[i] = letters[i];
-	// 		document.getElementById("hidden").innerHTML = answerArray.join("");
-	// 		numbLeft++
-	// 		// if (userG[i] >= 2) {
-	// 		// 	document.getElementById("game2").textContent = "already guessed that"
-	// 		// }
-			
-	// 		if (computerGuess == answerArray.join('')) {
-	// 			document.getElementById("game2").textContent = "You win!"
-	// 			document.getElementById("guessLeft").textContent = empty
-	// 			document.getElementById("numbLeft").textContent = empty
-
-	// 		}
-	// 	}
-
-	// }
 
 	if (userG !== letters[i]){
 			alreadyGuesses.push(userG);
@@ -138,8 +107,8 @@ document.onkeyup = function(event) {
 			alreadyGuesses.length = 0;
 			document.getElementById("guessLeft").textContent = empty
 			document.getElementById("numbLeft").textContent = empty
-			var x = document.getElementById("myAudio"); 
-
+			var x = document.getElementById("myAudio");
+			
 			function playAudio() { 
     		x.play(); 
 			} 
