@@ -47,7 +47,7 @@ var setup = function() {
 	}
 
 	document.getElementById("hidden").innerHTML = answerArray.join("");
-	document.getElementById("numbLeft").textContent = " Number of guesses left: " + numbLeft;
+	document.getElementById("numbLeft").textContent = " Guesses left: " + numbLeft;
 	for (i = 0; i < letters.length; i++) {
 		display[i] = "_ ";
 		output = output + display[i];
@@ -88,7 +88,7 @@ document.onkeyup = function(event) {
 			alreadyGuesses.push(userG);
 			numbLeft--
 			document.getElementById("guessLeft").textContent = "Your guesses so far: " + alreadyGuesses
-			document.getElementById("numbLeft").textContent = " Number of guesses left: " + numbLeft
+			document.getElementById("numbLeft").textContent = " Guesses left: " + numbLeft
 		
 			for (i = 0; i < letters.length; i++){
 				if (answerArray[i] == undefined) {

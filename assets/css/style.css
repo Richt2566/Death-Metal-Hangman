@@ -2,32 +2,44 @@
 body {
 	background-color: black;
 	text-align: center;
-	color: red;
 }
 
 .header {
+	margin-top: -70px;
 	font-family: 'Creepster', cursive;
-	color: red;
-	font-size: 70px;
+	color: black;
+	font-size: 85px;
 }
+
+h2 {
+	margin-top: 265px;
+}
+
+.inner-div {
+	background-color: black;
+	color: red;
+	margin-left: 220px;
+	width: 300px;
+}
+
 .container {
 	padding: 70px 0px;
-	width: 960px;
-	height: 800px;
+	width: 750px;
+	height: 600px;
+	color: red;
 	margin: 0 auto;
-	background-image: url(../images/creep.jpg);
+	background-image: url(../images/art.jpg);
 }
  
 .show {
 	color: red;
- }
+}
 
- #startGame {
+#startGame {
  	font-family: 'Creepster', cursive;
  	width: 200px;
  	height: auto;
  	background-color: red;
  	font-size: 30px;
  	border: 2px solid black;
-
- }
+}
